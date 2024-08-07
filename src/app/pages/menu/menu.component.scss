@@ -1,0 +1,61 @@
+.sidemenu{
+    width: 210px;
+    height: 100vh;
+    min-height: 100vh;
+    display: block; // quero que ocupe um espaço em tela com backgground com um size de facto
+    float: left;
+    background-color: var(--primary-color);
+    padding: 10px 0px;
+    box-shadow: 4px 0px 10px 4px #0a0a0a20;
+    margin-right: 16px;
+    ul{
+        padding: 0 ;
+    }
+
+    li{
+        font-size: 14px;
+        cursor: pointer;
+        color: white;
+        padding: 14px 24px;
+        margin: 0;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        transition: 0.3s linear all;
+        &:hover{
+            background: white;
+            color: var(--primary-color);
+
+        }
+        mat-icon{
+            margin-right: 14px;
+            font-size: 24px;
+
+            &:hover{
+                cursor: pointer;
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+ 
+    .logo{
+        font-size:20px;
+        font-weight: bold;
+        margin-left: 4px;
+    }
+}
+
+.logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 210px;
+}

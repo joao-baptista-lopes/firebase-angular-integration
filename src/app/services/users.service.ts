@@ -7,7 +7,6 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UsersService {
-
   constructor(private databaseStore: AngularFirestore) { }
 
   getAllUsers() {

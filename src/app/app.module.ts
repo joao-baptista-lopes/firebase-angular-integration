@@ -13,7 +13,8 @@ import { MenuComponent } from './pages/menu/menu.component';
 import {MatIconModule} from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { environment } from '../environments/environment.development';
-import {AngularFireModule} from '@angular/fire/compat'
+import {AngularFireModule} from '@angular/fire/compat';
+import { UsuariosComponent } from './pages/usuarios/usuarios.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {AngularFireModule} from '@angular/fire/compat'
     ButtonComponent,
     LoginComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    UsuariosComponent
   ],
   imports: [
     BrowserModule,

@@ -8,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit{
 
   userName: string | null; // porque a variável pode ser string ou nulo 
+  localizacao: any ;
+
+ 
 
   ngOnInit(): void {
-      this.userName = sessionStorage.getItem('user')
+      this.userName = sessionStorage.getItem('user');
   }
 
 }

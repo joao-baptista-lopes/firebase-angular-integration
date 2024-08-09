@@ -14,7 +14,6 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { environment } from '../environments/environment.development';
 import {AngularFireModule} from '@angular/fire/compat'
-import { initializeApp } from 'firebase/app';
 
 @NgModule({
   declarations: [

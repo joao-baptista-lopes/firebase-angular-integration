@@ -14,8 +14,18 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { environment } from '../environments/environment.development';
 import {AngularFireModule} from '@angular/fire/compat';
-import { UsuariosComponent } from './pages/usuarios/usuarios.component'
+import { UsuariosComponent } from './pages/usuarios/usuarios.component';
+import {  MatFormFieldModule } from '@angular/material/form-field';
+import {  MatButtonModule } from '@angular/material/button';
+import {  MatInputModule } from '@angular/material/input';
+import {  MatTableModule } from '@angular/material/table';
 
+const modulosAngularMaterial=[
+  MatFormFieldModule,
+  MatButtonModule,
+  MatInputModule,
+  MatTableModule
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +42,8 @@ import { UsuariosComponent } from './pages/usuarios/usuarios.component'
     MatIconModule,
     FormsModule,
     MatProgressSpinnerModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    ...modulosAngularMaterial
   ],
   providers: [
     provideClientHydration(),
